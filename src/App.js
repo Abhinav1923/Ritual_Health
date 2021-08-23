@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import Header from './Components/header';
 import HeroPage from './Components/heroPage';
 import ProductCategoryCards from './Components/productCategoryCards';

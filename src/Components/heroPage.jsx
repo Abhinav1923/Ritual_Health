@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
         top: '50%',
         transform: 'translateY(-50%)',
         width: '100%',
+        textAlign: 'center',
     },
     heroTitle: {
         fontSize: '4.75rem',
@@ -72,9 +73,9 @@ const useStyles = makeStyles((theme) => ({
         height: '50px',
         cursor: 'pointer',
         backgroundColor: 'rgb(20, 43, 111)',
-        border: ' 2px solid rgb(20, 43, 111)',
+        // border: ' 2px solid rgb(20, 43, 111)',
         margin: '0px',
-        transition: 'color 0.2s ease 0s, background-color 0.2s ease 0s, border 0.2s ease 0s',
+        transition: 'color 0.2s ease 0s, background-color 0.2s ease 0s',
         display: 'inline-flex',
         WebkitBoxAlign: 'center',
         alignItems: 'center',
@@ -82,7 +83,14 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         color: 'white',
         zIndex: 1,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        border: 'none',
+        '&:hover': {
+            color: '#142b6f',
+            transition: 'color 0.2s ease 0s, background-color 0.2s ease 0s',
+            backgroundColor: 'rgb(255, 255, 255)',
+            // border: 'none'
+        }
     }
 }))
 export default function HeroPage() {

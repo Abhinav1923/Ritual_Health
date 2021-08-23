@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
         // overflow: 'hidden',
         [theme.breakpoints.down('xs')]: {
-            flexDirection: 'column'
+            flexDirection: 'column',
+            padding: '0px 20px',
         },
     },
     imgContainer: {
@@ -27,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             width: '100%',
             '& img': {
-                width: '570px'
+                width: '570px',
+                maxWidth: '100%',
             },
         },
     },
@@ -90,7 +92,10 @@ const useStyles = makeStyles((theme) => ({
             fontFamily: 'Dutch801 N',
             fontSize: '1.125rem',
             lineHeight: '1.75rem',
-        }
+        },
+        [theme.breakpoints.down('xs')]: {
+            padding: '0px',
+        },
     },
     articleLink: {
         fontSize: '1.125rem',
@@ -99,11 +104,8 @@ const useStyles = makeStyles((theme) => ({
         borderBottom: '2px solid #142b6f',
         textDecoration: 'none',
         cursor: 'pointer',
-        fontSize: 'inherit',
-        lineHeight: '26px',
         transition: 'opacity .2s ease-in-out',
         width: 'fit-content',
-        fontSize: '1.125rem',
         marginTop: '32px'
     },
 

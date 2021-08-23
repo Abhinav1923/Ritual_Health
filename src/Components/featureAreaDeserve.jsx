@@ -1,7 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
 import Map from '../assets/images/Home-Map.jpg'
-import { fontSize } from '@material-ui/system'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -11,7 +10,8 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
         marginTop: '120px',
         [theme.breakpoints.down('xs')]: {
-            flexDirection: 'column-reverse'
+            flexDirection: 'column-reverse',
+            padding: '0px 20px',
         },
     },
     imgContainer: {
@@ -28,8 +28,10 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             width: '100%',
+            // padding: '0px 20px',
             '& img': {
-                width: '570px'
+                width: '570px',
+                maxWidth: '100%',
             },
         },
     },
@@ -68,7 +70,10 @@ const useStyles = makeStyles((theme) => ({
             fontFamily: 'Dutch801 N',
             fontSize: '1.125rem',
             lineHeight: '1.75rem',
-        }
+        },
+        [theme.breakpoints.down('xs')]: {
+            padding: '0px',
+        },
     },
     articleLink: {
         fontSize: '1.125rem',
@@ -77,11 +82,8 @@ const useStyles = makeStyles((theme) => ({
         borderBottom: '2px solid #142b6f',
         textDecoration: 'none',
         cursor: 'pointer',
-        fontSize: 'inherit',
-        lineHeight: '26px',
         transition: 'opacity .2s ease-in-out',
         width: 'fit-content',
-        fontSize: '1.125rem',
         marginTop: '32px'
     },
 }))

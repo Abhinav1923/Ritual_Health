@@ -51,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
     },
     card: {
         width: '134px',
+        textAlign: 'center',
         [theme.breakpoints.down('sm')]: {
             display: 'flex',
             width: '100%',

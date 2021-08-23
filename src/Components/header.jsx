@@ -63,7 +63,6 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: 'rgb(255, 214, 0)',
             height: '0px',
             left: '0px',
-            position: 'absolute',
             bottom: '0px',
             transition: 'height 200ms ease-in-out 0s',
         },
@@ -82,7 +81,9 @@ const useStyles = makeStyles((theme) => ({
     },
     logo: {
         position: 'absolute',
-        left: 'calc(50%-25px)',
+        [theme.breakpoints.down('sm')]: {
+            left: 'calc(50% - 25px)',
+        }
     },
     logoLink: {
         position: 'absolute',
@@ -120,11 +121,11 @@ export default function Header() {
             // console.log(window.scrollY)
             // console.log(header.current)
             if (window.scrollY >= 20) {
-                header.current.classList.remove('makeStyles-headerTop-11')
-                header.current.classList.add('makeStyles-headerBottom-12')
+                header.current.classList.remove('makeStyles-headerTop-10')
+                header.current.classList.add('makeStyles-headerBottom-11')
             } else if (window.scrollY < 20) {
-                header.current.classList.add('makeStyles-headerTop-11')
-                header.current.classList.remove('makeStyles-headerBottom-12')
+                header.current.classList.add('makeStyles-headerTop-10')
+                header.current.classList.remove('makeStyles-headerBottom-11')
             }
         })
     }, []);

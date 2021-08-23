@@ -34,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
     },
     cardsContainer: {
         width: '25%',
+        minWidth: '165px',
         padding: '0px 15px',
         [theme.breakpoints.down('xs')]: {
             width: '26.25vw',
@@ -48,11 +49,18 @@ const useStyles = makeStyles((theme) => ({
     },
     cardImg: {
         backgroundSize: 'cover',
-        backgroundRepeat: 'none',
+        // backgroundRepeat: 'none',
         backgroundPosition: 'center',
         width: '100%',
         height: '140px',
-        transition: '300ms linear 0s all',
+        transition: '500ms linear 0s all',
+        // [theme.breakpoints.down('md')]: {
+        //     height: '82px',
+        // },
+        // [theme.breakpoints.down('sm')]: {
+        //     height: '100px',
+        // },
+
     },
     cardImg1: {
         backgroundImage: `url(${Pimg1})`,
