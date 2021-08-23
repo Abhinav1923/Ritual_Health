@@ -93,9 +93,6 @@ const useStyles = makeStyles((theme) => ({
             width: '100%'
         }
     },
-    // headerImg: {
-    //     marginLeft: '35px'
-    // },
     whoWeAre: {
         [theme.breakpoints.down('xs')]: {
             display: 'none',
